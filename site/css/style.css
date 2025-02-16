@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'blu-writing';
+    src: url('/media/fonts/Bluberry_Writing-Regular.woff');
+    font-size: 16px;
+}
+
+body {
+    background-color: #F7EDE2;
+}
+
+nav {
+    background-color: #F5CAC3;
+    width: auto;
+    height: 80px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+}
+
+nav ul li a {
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 10px 10px 40px;
+    font-family: "blu-writing";
+    font-size: 24px;
+    background-color:#F7EDE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    text-decoration: none;
+    color: black;
+} 
+nav ul li a:hover {
+    transform: scale(0.9); 
+    background-color: #F28482;
+
+}
+
+#headshot {
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+#headshot img {
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    
+    transition: .3s all;
+
+    aspect-ratio: auto;
+
+    z-index: 6;
+}
+
+#headshot img:hover {
+    transform: translate(-50%, -60%);
+    transition: .3s all;
+}
+
+#blur-oval {
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    border-radius: 50%;
+    filter: blur(2rem);
+    opacity: 0;
+
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-out;
+    z-index: 2;
+}
+
+#headshot img:hover + #blur-oval{
+    opacity: 80%;
+}
+
+#headshot p{
+    font-family: blu-writing;
+    font-weight: bolder;
+    font-size: 44px;
+    width: 290px;
+
+    position: absolute;
+    left: 52%;
+    top: 20%;
+    transform: translate(-50%, -100%);
+
+    color: #F28482;
+
+}
+
+/* button img */
+
+#camera a img {
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: -8%;
+}
+
+#camera a {
+    text-decoration: none;
+}
+
+#camera {
+    animation: jumps 2s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+    /* background-color: aquamarine; */
+    height: 300px;
+    width: 400px;
+}
+
+
+@keyframes jumps {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+#camera p {
+    font-family:"blu-writing";
+    font-size: 34px;
+    font-weight: bolder;
+    color: #F28482;
+}
+/* spells out photo in a wonky way */
+#camera #l1 {
+    position: absolute;
+    top: 35%; 
+    left: 28%;
+}
+#camera #l2 {
+    position: absolute;
+    top: 25%; 
+    left: 35%;
+}
+#camera #l3 {
+    position: absolute;
+    top: 29%; 
+    left: 45%;
+}
+#camera #l4 {
+    position: absolute;
+    top: 20%; 
+    left: 55%;
+}
+#camera #l5 {
+    position: absolute;
+    top: 24%; 
+    left: 65%;
+}
+
+/* spells out -graphy in a wonky way on the bottom, completing photography*/
+
+#camera #l6 {
+    position: absolute;
+    top: 78%; 
+    left: 24%;
+}
+#camera #l7 {
+    position: absolute;
+    top: 87%; 
+    left: 35%;
+}
+#camera #l8 {
+    position: absolute;
+    top: 83%; 
+    left: 45%;
+}
+#camera #l9 {
+    position: absolute;
+    top: 77%; 
+    left: 55%;
+}
+#camera #l10 {
+    position: absolute;
+    top: 80%; 
+    left: 63%;
+}
+#camera #l11 {
+    position: absolute;
+    top: 70%; 
+    left: 70%;
+}
+
+/* projects button*/
+#projects {
+    animation: jumps 2s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+    /* background-color: aquamarine; */
+    height: 300px;
+    width: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+#projects img {
+    width: 300px;
+    height: 400px;
+}
+
+#projects p{
+    font-family: "blu-writing";
+    font-size: 34px;
+    font-weight: bolder;
+    color:#F28482;
+}
+
+#projects #l1 {
+    position: absolute;
+    top: 18%; 
+    left: 10%;
+}
+#projects #l2 {
+    position: absolute;
+    top: 23%; 
+    left: 18%;
+}
+#projects #l3 {
+    position: absolute;
+    top: 21%; 
+    left: 24%;
+}
+#projects #l4 {
+    position: absolute;
+    top: 25%; 
+    left: 30%;
+}
+#projects #l5 {
+    position: absolute;
+    top: 22%; 
+    left: 35%;
+}
+#projects #l6 {
+    position: absolute;
+    top: 18%; 
+    left: 41%;
+}
+#projects #l7 {
+    position: absolute;
+    top: 26%; 
+    left: 47%;
+}
+#projects #l8 {
+    position: absolute;
+    top: 22%; 
+    left: 53%;
+}
+
+/* media queries*/
+
+@media (max-width: 640px) {
+    #blur-oval{
+        opacity: 1;
+        width: 180px;
+    }
+    /* camera button*/
+    #camera{
+        position: absolute;
+        top: 73%;
+        left: 30%;
+
+        width: 315px;
+        height: 215px;
+    }
+    #camera a img {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -10%;
+        left: 2%;
+    }
+    /* projects button*/
+    #projects {
+        height: 200px;
+        width: 300px;
+
+        position: absolute;
+        top: 55%;
+        left: 2%;
+
+    }
+    #projects a img {
+        height: 250px;
+        width: 300px;
+
+        position: absolute;
+        top: 10%;
+        left: -8%;
+    }
+}
+
+@media (max-width: 768px){
+    #blur-oval{
+        opacity: 1;
+        width: 180px;
+    }
+}
+
+@media (max-width: 1080px){
+    #blur-oval{
+        opacity: 1;
+        width: 180px;
+    }
+}
+
+@media (min-width: 1200px ){
+
+}

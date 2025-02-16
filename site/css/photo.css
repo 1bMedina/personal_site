@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'blu-writing';
+    src: url('/media/fonts/Bluberry_Writing-Regular.woff');
+    font-size: 16px;
+}
+
+body {
+    background-color: #F7EDE2;
+}

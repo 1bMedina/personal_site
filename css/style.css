@@ -284,10 +284,28 @@ nav ul li a:hover {
 
 /* media queries*/
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 767px){
+    #headshot{
+        width: 100vw;
+    }
+
+    #headshot img {
+        width: 150px;
+        height: 150px;
+
+        transition: none;
+    }
+    
     #blur-oval{
         opacity: 1;
-        width: 180px;
+        width: 130px;
+
+        transition: none;
+    }
+
+    #headshot p {
+        left: 55%;
+
     }
     /* camera button*/
     #camera{
@@ -323,7 +341,7 @@ nav ul li a:hover {
         top: 10%;
         left: -8%;
     }
-}
+} 
 
 @media (max-width: 768px){
     #blur-oval{

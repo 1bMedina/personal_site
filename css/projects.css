@@ -135,6 +135,40 @@ a:hover {
     left: 51%;
     transform: translate(-50%, -50%);
 }
+#personal-buttons p {
+    width: 400px;
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#personal-buttons {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50% , -50%);
+
+    background-color: #F5CAC3;
+}
+#personal-buttons img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#personal-buttons:hover{
+    background-color: #ffc290;
+    transition-duration: .3s;
+    transition: ease-out;
+}
 
 @media (max-width: 640px) {
     #selection {
